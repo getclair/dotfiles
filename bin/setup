@@ -17,8 +17,8 @@ if [ -z "$REPOSITORY" ] || [ -z "$DIRECTORY" ]; then
     exit 1
 fi
 
-git clone $REPOSITORY $DIRECTORY
-cd $DIRECTORY
+git clone "$REPOSITORY" "$DIRECTORY"
+cd "$DIRECTORY" || exit
 
 cp .env.example .env
 sed -i '' 's/DB_DATABASE=.*/DB_DATABASE=laravel/' .env
@@ -32,4 +32,4 @@ php artisan migrate:fresh --seed
 npm install
 npm run dev
 
-open -a "/Applications/Visual Studio Code.app" "`pwd`"
+open -a "/Applications/Visual Studio Code.app" "$(pwd)"

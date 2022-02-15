@@ -33,7 +33,6 @@ brew 'gifsicle'
 # Development
 brew 'php'
 brew 'php@8.0'
-brew 'php@7.4'
 brew 'composer'
 brew 'imagemagick'
 brew 'meilisearch'
@@ -54,30 +53,19 @@ cask 'firefox'
 cask 'github'
 cask 'google-chrome'
 cask 'gpg-suite'
-cask 'helo'
-cask 'homebrew/cask-drivers/elgato-stream-deck'
 cask 'imageoptim'
 cask 'insomnia'
 cask 'pastebot'
 cask 'phpmon'
 cask 'phpstorm'
-cask 'ray'
-cask 'screenflow'
-cask 'slack'
+cask 'postico'
+cask 'raycast'
+cask 'superhuman'
 cask 'tableplus'
-cask 'telegram-desktop'
 cask 'the-unarchiver'
 cask 'tinkerwell'
-cask 'transmit'
-cask 'tunnelbear'
 cask 'tuple'
 cask 'visual-studio-code'
-cask 'whatsapp'
-cask 'zoom'
-
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
 
 # Fonts
 cask 'font-lato'
@@ -90,10 +78,8 @@ cask 'font-source-serif-pro'
 
 # Mac App Store
 mas 'Byword', id: 420212497
+mas 'Craft', id: 1487937127
 mas 'Giphy Capture', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
-mas 'Spark', id: 1176895641
 mas 'Speedtest', id: 1153157709
-mas 'Things', id: 904280696
-mas 'Tweetbot', id: 1384080005

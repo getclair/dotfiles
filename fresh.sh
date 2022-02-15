@@ -41,13 +41,11 @@ $HOME/.composer/vendor/bin/valet install
 # Create a Sites directory
 mkdir $HOME/Sites
 
-# Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/eventsauce
-mkdir $HOME/Sites/laravel
-
 # Clone Github repositories
 $DOTFILES/clone.sh
+
+# Set default apps
+$DOTFILES/defaults.sh
 
 # Symlink the Mackup config file to the home directory
 ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
